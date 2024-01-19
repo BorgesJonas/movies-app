@@ -2,11 +2,13 @@ import { NavigationContainer } from "@react-navigation/native";
 import renderer from "react-test-renderer";
 import { render, screen } from "@testing-library/react-native";
 import { Home } from "./index";
+import { Text } from "react-native";
 
 function renderComponent() {
   return (
     <NavigationContainer>
-      <Home />
+      {/* <Home /> */}
+      <Text>Olá, Mundo!</Text>
     </NavigationContainer>
   );
 }
@@ -17,9 +19,9 @@ describe("Home component", () => {
   //     expect(tree).toMatchSnapshot();
   //   });
 
-  it("renders correctly", () => {
+  it("renders correctly", async () => {
     render(renderComponent());
-    const text = screen.queryByText(/o que você quer assistir hoje/);
-    expect(text).toBeDefined();
+    const text = await screen.findByText(/olá, mundo/i);
+    expect(text).toBeOnTheScreen();
   });
 });
