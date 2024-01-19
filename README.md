@@ -1,6 +1,6 @@
 # Movie Explorer
 
-Welcome to Movie Explorer, a simple React Native application built with Expo. This application allows you to browse a list of movies, view details, and mark your favorites. Integration with The Movie Database (TMDb) API provides accurate and up-to-date information about movies.
+Welcome to Movie Explorer, a simple React Native application built with Expo for the purpose of react native studies. This application allows you to browse a list of movies, view details, and mark your favorites. Integration with The Movie Database (TMDb) API provides accurate and up-to-date information about movies.
 
 ## Prerequisites
 
@@ -53,7 +53,6 @@ This will start Expo DevTools in your browser. You can then open the Expo Go app
 ## Features
 
 - **Movie Listing:** Explore a list of movies based on the latest releases.
-  
 - **Movie Details:** View detailed information about each movie, including cast, ratings, and synopsis.
 
 - **Favorites:** Mark your favorite movies for easy access later on.
