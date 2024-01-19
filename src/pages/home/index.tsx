@@ -7,7 +7,7 @@ import {
   View,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { MagnifyingGlass } from "phosphor-react-native";
+// import { MagnifyingGlass } from "phosphor-react-native";
 import { api } from "../../services/api";
 import { CardMovie } from "../../components/card-movie";
 
@@ -98,7 +98,7 @@ export function Home() {
             onChangeText={handleSearch}
             value={search}
           />
-          <MagnifyingGlass color="#FFF" size={25} weight="light" />
+          {/* <MagnifyingGlass color="#FFF" size={25} weight="light" /> */}
         </View>
 
         {noResult && (
